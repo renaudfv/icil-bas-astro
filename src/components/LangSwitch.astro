@@ -1,0 +1,9 @@
+---
+import { getRelativeLocaleUrl } from "astro:i18n";
+const currentLocale = Astro.currentLocale ?? "en";
+const otherLocale = currentLocale === "en" ? "fr" : "en";
+---
+
+<a href={getRelativeLocaleUrl(otherLocale, Astro.url.pathname)}>
+    {otherLocale === "fr" ? "Français" : "English"}
+</a>
