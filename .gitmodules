@@ -1,2 +1,5 @@
 [submodules "src/content-vault"]
 	url = https://github.com/renaudfv/icil-bas.git
+[submodule "src/content-vault"]
+	path = src/content-vault
+	url = https://github.com/renaudfv/icil-bas.git
